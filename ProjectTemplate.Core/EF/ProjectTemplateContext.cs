@@ -19,6 +19,7 @@ namespace ProjectTemplate.Core.EF
 
         public virtual DbSet<Film> Films { get; set; }
         public virtual DbSet<FilmType> FilmTypes { get; set; }
+        public virtual DbSet<Actor> Actors { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

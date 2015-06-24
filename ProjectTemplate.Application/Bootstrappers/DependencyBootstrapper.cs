@@ -53,6 +53,13 @@ namespace ProjectTemplate.Application.Bootstrappers
             dependencyContainer.RegisterTransient<IRepositoryUser, RepositoryUser>();
             dependencyContainer.RegisterTransient<IBusinessUser, BusinessUser>();
 
+            dependencyContainer.RegisterTransient<IServiceBase<Actor>, ServiceBase<Actor>>();
+            dependencyContainer.RegisterTransient<IRepositoryBase<Actor>, RepositoryBase<Actor>>();
+            dependencyContainer.RegisterTransient<IBusinessBase<Actor>, BusinessBase<Actor>>();
+            dependencyContainer.RegisterTransient<IServiceActor, ServiceActor>();
+            dependencyContainer.RegisterTransient<IRepositoryActor, RepositoryActor>();
+            dependencyContainer.RegisterTransient<IBusinessActor, BusinessActor>();
+
         }
     }
 }

@@ -46,6 +46,13 @@ namespace ProjectTemplate.Application.Bootstrappers
             dependencyContainer.RegisterTransient<IRepositoryFirm, RepositoryFirm>();
             dependencyContainer.RegisterTransient<IBusinessFirm, BusinessFirm>();
 
+            dependencyContainer.RegisterTransient<IServiceBase<FilmType>, ServiceBase<FilmType>>();
+            dependencyContainer.RegisterTransient<IRepositoryBase<FilmType>, RepositoryBase<FilmType>>();
+            dependencyContainer.RegisterTransient<IBusinessBase<FilmType>, BusinessBase<FilmType>>();
+            dependencyContainer.RegisterTransient<IServiceFilmType, ServiceFilmType>();
+            dependencyContainer.RegisterTransient<IRepositoryFilmType, RepositoryFilmType>();
+            dependencyContainer.RegisterTransient<IBusinessFilmType, BusinessFilmType>();
+
         }
     }
 }

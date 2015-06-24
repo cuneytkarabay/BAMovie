@@ -38,6 +38,7 @@
     <Compile Include="RepositoryBase.cs" />
     <Compile Include="RepositoryFirm.cs" />
     <Compile Include="RepositoryStudent.cs" />
+    <Compile Include="RepositoryUser.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

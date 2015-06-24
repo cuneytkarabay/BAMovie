@@ -38,6 +38,7 @@
     <Compile Include="ServiceBase.cs" />
     <Compile Include="ServiceFirm.cs" />
     <Compile Include="ServiceStudent.cs" />
+    <Compile Include="ServiceUser.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

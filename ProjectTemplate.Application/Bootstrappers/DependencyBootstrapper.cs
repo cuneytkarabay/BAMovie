@@ -46,6 +46,13 @@ namespace ProjectTemplate.Application.Bootstrappers
             dependencyContainer.RegisterTransient<IRepositoryFirm, RepositoryFirm>();
             dependencyContainer.RegisterTransient<IBusinessFirm, BusinessFirm>();
 
+            dependencyContainer.RegisterTransient<IServiceBase<User>, ServiceBase<User>>();
+            dependencyContainer.RegisterTransient<IRepositoryBase<User>, RepositoryBase<User>>();
+            dependencyContainer.RegisterTransient<IBusinessBase<User>, BusinessBase<User>>();
+            dependencyContainer.RegisterTransient<IServiceUser, ServiceUser>();
+            dependencyContainer.RegisterTransient<IRepositoryUser, RepositoryUser>();
+            dependencyContainer.RegisterTransient<IBusinessUser, BusinessUser>();
+
         }
     }
 }

@@ -36,6 +36,7 @@
   <ItemGroup>
     <Compile Include="BusinessActor.cs" />
     <Compile Include="BusinessBase.cs" />
+    <Compile Include="BusinessDirector.cs" />
     <Compile Include="BusinessFirm.cs" />
     <Compile Include="BusinessStudent.cs" />
     <Compile Include="BusinessUser.cs" />

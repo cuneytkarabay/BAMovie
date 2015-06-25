@@ -16,9 +16,10 @@ namespace ProjectTemplate.Core.EF
         public virtual DbSet<Student> Students { get; set; }
         public virtual DbSet<Firm> Firms { get; set; }
         public virtual DbSet<User> Users { get; set; }
-
+        public virtual DbSet<Director> Directors { get; set; }
         public virtual DbSet<Film> Films { get; set; }
         public virtual DbSet<FilmType> FilmTypes { get; set; }
+        public virtual DbSet<Actor> Actors { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
